@@ -1,0 +1,133 @@
+body {
+    background-color: #333333;
+    color: white;
+}
+
+h1 {
+    font-family: 'Oswald', serif;
+    padding: 10px 0 0 20px;
+}
+
+h2 {
+    font-family: 'Sonsie One', serif;
+    padding: 10px 0 20px 20px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    background-color: white;
+    color: #333333;
+    justify-content: center;
+    
+}
+
+figure {
+    border: 1px solid black;;
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+p {
+    font-family: 'EB Garamond', serif;
+    padding: 15px;
+}
+
+.image {
+    height: 180px;
+    background-position: center;
+    
+}
+
+#Boats .image{
+    background-image: url("images/lake.jpg");
+}
+
+#Building .image {
+    background-image: url("images/empire.jpg");
+}
+
+#Human .image {
+    background-image: url("images/person.jpg");
+}
+
+#Tree .image {
+    background-image: url("images/tree.jpg");
+}
+
+#Architecture, #Sand, #Bridge, #Camera {
+   display: none;
+}
+
+
+@media only screen and (min-width: 600px) {
+    h2 {
+        font-family: 'Sonsie One', serif;
+        padding: 10px 0 0 20px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+        margin: 90px;
+    }
+    
+    figure {
+        border: 1px solid black;;
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .image {
+        height: 250px;
+        background-position: center;
+        
+    }
+
+    #Boats .image {
+        background-image: url("images/lake.jpg");
+        
+    }
+
+    #Building .image {
+        background-image: url("images/empire.jpg");
+        
+    }
+
+    #Human .image {
+        background-image: url("images/person.jpg");
+        
+    }
+
+    #Tree .image {
+        background-image: url("images/tree.jpg");
+        
+    }
+
+    #Architecture .image {
+        background-image: url("images/geo.jpg");
+         
+    }
+
+    #Sand .image {
+        background-image: url("images/sand.jpg");
+          
+    }
+
+    #Bridge .image {
+        background-image: url("images/bridge.jpg");
+        
+    }
+
+    #Camera .image {
+        background-image: url("images/lens.jpg");
+        
+    }
+
+    #Architecture, #Sand, #Bridge, #Camera {
+        display: block;
+     }
+} 
